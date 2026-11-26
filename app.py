@@ -511,26 +511,44 @@ fig4.update_layout(
 
 fig3.update_layout(height=250)
 
+# Garantizar visibilidad en modo claro y oscuro
+for figura in [fig1, fig2, fig3, fig4]:
+    figura.update_layout(
+        paper_bgcolor="#FFFFFF",
+        plot_bgcolor="#FFFFFF",
+        font_color="#15354E",
+        title_font_color="#15354E",
+        legend_font_color="#15354E"
+    )
 
+    figura.update_xaxes(
+        tickfont_color="#15354E",
+        title_font_color="#15354E",
+        gridcolor="#E2E8F0"
+    )
+
+    figura.update_yaxes(
+        tickfont_color="#15354E",
+        title_font_color="#15354E",
+        gridcolor="#E2E8F0"
+    )
 # Distribución de las gráficas
-
-
 
 izquierda, derecha = st.columns(2)
 
 with izquierda:
-    st.plotly_chart(fig1, use_container_width=True)
+    st.plotly_chart(fig1, use_container_width=True, theme=None)
 
 with derecha:
-    st.plotly_chart(fig2, use_container_width=True)
+    st.plotly_chart(fig2, use_container_width=True, theme=None)
 
 izquierda2, derecha2 = st.columns(2)
 
 with izquierda2:
-    st.plotly_chart(fig3, use_container_width=True)
+    st.plotly_chart(fig3, use_container_width=True, theme=None)
 
 with derecha2:
-    st.plotly_chart(fig4, use_container_width=True)
+    st.plotly_chart(fig4, use_container_width=True, theme=None)
 
 
 # Hallazgos estratégicos dinámicos
