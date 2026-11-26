@@ -220,7 +220,7 @@ p {
 # Encabezado
 st.title("💊 Farmacias Valle")
 st.markdown(
-    "Desempeño comercial y oportunidades de abastecimiento"
+    "**Ingresos en crecimiento: medicamentos crónicos lideran el desempeño comercial**"
 )
 
 st.write(
