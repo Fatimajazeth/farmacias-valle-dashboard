@@ -632,10 +632,6 @@ desde el área de compras.
 </div>
 </div>""", unsafe_allow_html=True)
 
-# Tabla de datos
-with st.expander("Consultar datos detallados"):
-    st.dataframe(actual, use_container_width=True)
-
 # Fuente de información
 
 
